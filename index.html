@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hin Yau's Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- To delete -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        /* For the sake of simplicity and due to the limitations of GA Dash, I will not separate the CSS and JS into separate files. */
+
+
+
+    </style>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <p class="hidden">DISCLAIMER: This site is for educational purposes only. The content uses an image by vectorstockvadim and a video by New York Philharmonic Orchestra. I hereby declare that I do not own the rights to the video and image. All rights belong to the owners. No Copyright Infringement Intended.</p>
+    <iframe 
+    class="background-video"
+    src="https://www.youtube.com/embed/hu5P_wn2egQ?autoplay=1&mute=1&controls=0&loop=1&playlist=hu5P_wn2egQ"
+    frameBorder="0"
+    allowFullScreen
+    allow="autoplay"
+    ></iframe>
+    <div class="overlay">
+        <header class="hero">
+            <img class="profile-picture" src="https://raw.githubusercontent.com/nzxzn/adobeImages/main/Square.jpg" alt="Hin's Profile Picture">
+            <p class="hero-text">Hi! I'm Hin, a California-based musician. Say hello!</p>
+        </header>
+        <main>
+            <form action="#" method="POST" class="info-form">
+                <fieldset class="fieldset">
+                    <legend>Let's Get Connected! <span class="alert">Please DO NOT put any real information!</span></legend>
+                    <div>
+                        <label for="first-name" class="required">First Name</label>
+                        <input class="text-box" type="text" placeholder="John" name="first-name" id="first-name" required>
+                    </div>
+                    <div>
+                        <label for="last-name" class="required">Last Name</label>
+                        <input class="text-box" type="text" placeholder="Doe" name="last-name" id="last-name" required>
+                    </div>
+                    <div>
+                        <label for="email" class="required">Your Email </label>
+                        <input class="text-box" type="email" placeholder="johndoe@example.com" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input class="text-box" type="tel" placeholder="8001234567" name="phone" id="phone" pattern="[0-9]{10}">
+                    </div>
+                </fieldset>
+                <button class="submit-button" type="submit">Submit</button>
+            </form>
+        </main>
+    </div>
+</body>
